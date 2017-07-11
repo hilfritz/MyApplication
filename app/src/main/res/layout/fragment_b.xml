@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
+    tools:context="com.example.test.myapplication.fragment.Fragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment_b"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:id="@+id/header"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:hint="@string/enter_name"
+        android:id="@+id/name_input"
+        android:inputType="textPersonName"
+        />
+
+    <ImageView
+        android:layout_width="@dimen/logo_width_height"
+        android:layout_height="@dimen/logo_width_height"
+        android:src="@drawable/unnamed"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/name_input"
+        android:id="@+id/logo"
+        />
+    <View
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/activity_padding"
+        android:layout_marginRight="@dimen/activity_padding"
+        android:id="@+id/center_horizontal_view"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_toLeftOf="@id/center_horizontal_view"
+        android:id="@+id/back_btn"
+        android:text="@string/back"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_toRightOf="@id/center_horizontal_view"
+        android:id="@+id/next_btn"
+        android:text="@string/next"
+        />
+
+</RelativeLayout>
