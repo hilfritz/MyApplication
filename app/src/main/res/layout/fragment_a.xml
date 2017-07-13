@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/activity_padding"
     tools:context="com.example.test.myapplication.fragment.FragmentA">
 
     <!-- TODO: Update blank fragment layout -->
@@ -10,6 +11,28 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:id="@+id/click_txt"
-        android:text="Click Me!" />
+        android:gravity="center"
+        android:textSize="14sp"
+        android:text="Click Me!\nPlease use Pushtry.com to see make the app receive push notification."
+        android:layout_below="@+id/access_token"
+        android:layout_marginTop="@dimen/activity_padding"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Access Token:"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:id="@+id/access_token_label"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/access_token_label"
+        android:background="#ffffff"
+        android:id="@+id/access_token"/>
 
 </RelativeLayout>

@@ -3,12 +3,16 @@ package com.example.test.myapplication.fragment;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.test.myapplication.MapsActivity;
 import com.example.test.myapplication.R;
+import com.example.test.myapplication.fcm.FirebaseManager;
 import com.example.test.myapplication.fragment.helper.OnFragmentInteractionListener;
 
 /**
@@ -30,6 +34,7 @@ public class FragmentA extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+    FirebaseManager firebaseManager;
 
     public FragmentA() {
         // Required empty public constructor
@@ -73,6 +78,11 @@ public class FragmentA extends Fragment {
                 ((MapsActivity)getActivity()).showFragmentB();
             }
         });
+
+        String firebaseAccessToken = ((MapsActivity) getActivity()).getFirebaseAccessToken();
+        if (firebaseAccessToken!=null && firebaseAccessToken.isEmpty()==false){
+            ((EditText)view.findViewById(R.id.access_token)).setText(firebaseAccessToken);
+        }
 
         return view;
     }

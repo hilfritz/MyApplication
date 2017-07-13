@@ -11,6 +11,8 @@ import com.example.test.myapplication.fragment.helper.OnFragmentInteractionListe
 
 public interface NavigationInterface extends OnFragmentInteractionListener {
 
+    void populate();
+    void sendPushNotification();
     public void showFragmentA();
     public void showFragmentB();
     public void showFragmentC();
@@ -18,4 +20,5 @@ public interface NavigationInterface extends OnFragmentInteractionListener {
     FragmentA getFragmentA();
     FragmentB getFragmentB();
     FragmentC getFragmentC();
+    String getFirebaseAccessToken();
 }
