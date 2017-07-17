@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "856871559208",
+    "firebase_url": "https://comfortdelgropushtrytest.firebaseio.com",
+    "project_id": "comfortdelgropushtrytest",
+    "storage_bucket": "comfortdelgropushtrytest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856871559208:android:fdf47772f8aa0eca",
+        "android_client_info": {
+          "package_name": "com.example.test.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856871559208-obj7k9uo7qoplvuas2bvtci9kmvgk6rm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAshv-xj5eT55KtYmxHpextt1Hogtceh2k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
